@@ -1,0 +1,74 @@
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+[class^="intro__tilt"] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: var(--color-main);
+  clip-path: polygon(100% 90%, 100% 100%, 0 100%, 0 0);
+}
+.intro__tilt--flip {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 90%);
+  opacity: 0.5;
+}
+.intro {
+  background-image: url("../images/intro-bg.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .intro {
+    background-size: auto 100%;
+    height: 100vh;
+  }
+  #wholetitle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+  }
+  #title {
+    text-align: center;
+  }
+  #go {
+    animation: blink 1s ease-in-out infinite alternate;
+  }
+}
+@media (min-width: 769px) {
+  .intro {
+    /* background-size: cover; */
+    width: 100vw;
+    height: 40vh;
+    position: relative;
+  }
+  #wholetitle {
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+  }
+  #title {
+    text-align: center;
+  }
+  #go {
+    animation: blink 1s ease-in-out infinite alternate;
+  }
+}
