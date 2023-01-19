@@ -4,6 +4,14 @@ nav {
   background-color: var(--color-main);
 }
 @media (max-width: 768px) {
+  #home {
+    display: block; /* a태그는 글자성격 = inline */
+    float: left;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 60px;
+    padding: 0 30px;
+  }
   body {
     margin: 0;
     padding: 0;
@@ -16,9 +24,12 @@ nav {
 
   #menuToggle {
     display: block;
-    position: relative;
+    position: absolute;
     /* top: 50px; */
     /* left: 50px; */
+    right: 0px;
+    margin-top: 15px;
+    margin-right: 10px;
 
     z-index: 1;
 
@@ -115,7 +126,7 @@ nav {
     position: absolute;
     width: 300px;
     /* margin: -100px 0 0 -50px; */
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 50px;
     padding-top: 125px;
 
@@ -125,9 +136,9 @@ nav {
     /* to stop flickering of text in safari */
 
     transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
+    transform: translate(-90%, 0%);
 
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform0.7s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
   #menu li {
@@ -146,6 +157,14 @@ nav {
 @media (min-width: 769px) {
   #bar {
     display: none;
+  }
+  #home {
+    display: block; /* a태그는 글자성격 = inline */
+    float: left;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 60px;
+    padding: 0 30px;
   }
   #menuToggle > a {
     display: block; /* a태그는 글자성격 = inline */
