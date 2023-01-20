@@ -137,8 +137,7 @@ nav {
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
 
-    transform-origin: 0% 0%;
-    transform: translate(-90%, 0%);
+    transform: none;
 
     transition: transform 0.7s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
@@ -149,7 +148,8 @@ nav {
   }
 
   #menuToggle input:checked ~ ul {
-    transform: none;
+    transform-origin: 0% 0%;
+    transform: translate(-90%, 0%);
   }
 }
 
