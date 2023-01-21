@@ -5,17 +5,18 @@ nav {
   background-color: var(--color-main);
 }
 
+#home {
+  display: block; /* a태그는 글자성격 = inline */
+  float: left;
+  font-size: 30px;
+  /* font-weight: 900; */
+  line-height: 60px;
+  padding: 0 30px;
+  color: white;
+}
+
 /* 미디어쿼리 웹 화면 */
 @media (max-width: 768px) {
-  #home {
-    display: block; /* a태그는 글자성격 = inline */
-    float: left;
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 60px;
-    padding: 0 30px;
-  }
-
   body {
     margin: 0;
     padding: 0;
@@ -59,7 +60,7 @@ nav {
 
   #menuToggle a {
     text-decoration: none;
-    color: #232323;
+    color: #454045;
 
     transition: color 0.3s ease;
   }
@@ -161,9 +162,10 @@ nav {
     display: block; /* a태그는 글자성격 = inline */
     float: left;
     font-size: 30px;
-    font-weight: 900;
+    /* font-weight: 900; */
     line-height: 60px;
     padding: 0 30px;
+    color: white;
   }
   #menuToggle > a {
     display: block; /* a태그는 글자성격 = inline */
@@ -180,5 +182,6 @@ nav {
     float: left;
     padding: 0 30px;
     line-height: 60px;
+    color: white;
   }
 }

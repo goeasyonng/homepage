@@ -1,2 +1,63 @@
+#about {
+  background-color: rgb(247, 227, 227);
+}
+p {
+  color: white;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 64px 16px;
+    text-align: center;
+  }
+
+  .section__tag {
+    font-size: var(--font-size-tag);
+    color: var(--color-sub);
+  }
+
+  .section__title {
+    font-size: var(--font-size-title);
+    font-weight: bold;
+    color: var(--color-text);
+  }
+}
 @media (min-width: 769px) {
+  /* about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  } */
+  .about {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about_card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgb(50, 45, 72);
+    height: 250px;
+    width: 300px;
+  }
+  .about_icon {
+    opacity: 0.5;
+    height: 100px;
+    width: 100px;
+  }
+  .section {
+    padding: 64px 16px;
+    text-align: center;
+  }
+
+  .section__tag {
+    font-size: var(--font-size-tag);
+    color: var(--color-sub);
+  }
+
+  .section__title {
+    font-size: var(--font-size-title);
+    font-weight: bold;
+    color: var(--color-text);
+  }
 }
