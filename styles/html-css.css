@@ -1,4 +1,76 @@
+#html-css{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(247, 227, 227);
+
+}
+#html{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  margin-right: 3px;
+}
+#CSS{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+
+}
+#title{
+  text-align: center;
+  margin: 20px;
+
+}
+#title1 {
+  color: green;
+}
+#title2 {
+  color: black;
+  font-size: xx-large;
+  font-weight:bold;
+}
+.len {
+  color: black;
+  text-align: left;
+}
+.c-red{
+  color: red;
+}
+.c-blue{
+  color: blue;
+}
+.explane {
+  color: black;
+  text-align: left;
+
+}
+#key{
+  display: flex;
+  flex-direction: row;
+}
+.keyword {
+  color: rgb(254, 168, 182);
+  /* text-align: left; */
+
+}
+#detail{
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+
+}
+.html_img{
+  width: 10rem;
+  height: 10rem;
+}
+
 @media (max-width: 768px) {
+  
 }
 
 @media (min-width: 769px) {
