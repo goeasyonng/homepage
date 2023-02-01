@@ -1,10 +1,3 @@
-#html-css{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgb(247, 227, 227);
-
-}
 #html{
   display: flex;
   flex-direction: column;
@@ -23,7 +16,7 @@
 }
 #title{
   text-align: center;
-  margin: 20px;
+  margin: 40px;
 
 }
 #title1 {
@@ -61,17 +54,30 @@
 #detail{
   display: flex;
   flex-direction: row;
-  margin: 30px;
+  margin: 40px;
 
+}
+.htmldeco{
 }
 .html_img{
   width: 10rem;
   height: 10rem;
+  margin-right: 20px;
 }
 
 @media (max-width: 768px) {
+  #html-css{
+    background-color: rgb(247, 227, 227);
   
+  }
 }
 
 @media (min-width: 769px) {
+  #html-css{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(247, 227, 227);
+  
+  }
 }

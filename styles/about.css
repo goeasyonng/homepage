@@ -82,8 +82,10 @@
 @media (min-width: 769px) {
   .about {
     padding: 50px 100px;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
+    width: 1000px;
   }
   .about_card {
     margin: 1px;
