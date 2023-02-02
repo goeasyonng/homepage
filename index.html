@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +9,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
-
+  
   <body>
 
     <section class="intro">
@@ -27,13 +26,13 @@
 
     <header class="header">
       <nav id="nav">
-        <a id="home">HOME</a>
-        <div id="menuToggle">
-            <input id="bar" type="checkbox" />
+        <a id="nav_home">HOME</a>
+        <div id="nav_menuToggle">
+            <input id="nav_bar" type="checkbox" />
             <span></span>
             <span></span>
             <span></span>
-              <ul id="menu">
+              <ul id="nav_menu">
                 <li><a href="#">새싹강좌는</a></li>
                 <li><a href="#">HTML</a></li>
                 <li><a href="#">CSS</a></li>
@@ -45,18 +44,17 @@
     </header>
 
     <main>
-
+      
       <section id="about" class="section">
-        <header class="section__header">
-          <strong class="section__tag">
+        <header class="about_header">
+          <strong class="about_tag">
             about
           </strong>
-          <h1 class="section__title">
-            새싹강좌는
+          <h1 class="about_title">
+            새싹 강좌는
           </h1>
         </header>
-  
-        <div class="about">
+        <div class="about_main">
           <div class="about_card">
             <img class="about_icon" src="./images/about_1.svg" alt="">
             <h2 class="about_title_1">
@@ -91,53 +89,66 @@
       </section>
 
       <section id="html-css">
+
         <div id="html">
-          <div id="title">
-            <h1 id="title1">html</h1>
-            <p id="title2">갖다 놓는 HTML</p>
+
+          <div class="html-css_title">
+            <h1 id="html-css_title1">html</h1>
+            <p id="html-css_title2">갖다 놓는 HTML</p>
           </div>
-          <div id="detail">
-            <img class="html_img" src="./images/logo-html.svg">
-            <div>
-              <div>
-                <p class="len"><span class="c-red">H</span>yper<span class="c-red">T</span>ext</p>
-                
+
+          <div class="html-css_detail">
+
+            <img class="html-css_img" src="./images/logo-html.svg">
+
+            <div class="html-css_contents">
+
+              <div class="html-css_content">
+                <p class="len"><span class="c-red">H</span>yper<span class="c-red">T</span>ext</p>  
                 <p class="len"><span class="c-red">M</span>arkup<span class="c-red">L</span>anguage</p>
               </div>
-              <div>
-                <p class="explane"><span>태그</span>를 사용하여 웹페이지 안의 요소들과</p>
-                
-                <p class="explane">그 구조를 표현할 수 있는 언어입니다.</p>
-              </div> 
-              <div id="key">
-                  <p class="keyword">✔마크업&nbsp</p>
-                  <p class="keyword">✔웹개발&nbsp</p>
-                  <p class="keyword">✔쉬움&nbsp</p>
+
+              <div class="html-css_content">
+                <p class="explain"><b>태그</b>를 사용하여 웹페이지 안의 요소들과</p>
+                <p class="explain">그 구조를 표현할 수 있는 언어입니다.</p>
+              </div>
+
+              <div class="key">
+                  <p class="keyword"><span class="check">✔</span> 마크업&nbsp</p>
+                  <p class="keyword"><span class="check">✔</span> 웹개발&nbsp</p>
+                  <p class="keyword"><span class="check">✔</span> 쉬움&nbsp</p>
               </div>
             </div>
           </div>
         </div>
 
         <div id="CSS">
-          <div id="title">
-            <h1 id="title1">html</h1>
-            <p id="title2">꾸미는 CSS</p>
+
+          <div class="html-css_title">
+            <h1 id="html-css_title1">html</h1>
+            <p id="html-css_title2">꾸미는 CSS</p>
           </div>
-          <div id="detail">
-            <img class="html_img" src="./images/logo-css.svg">
-            <div>
-              <div class="htmldeco">
+
+          <div class="html-css_detail">
+
+            <img class="html-css_img" src="./images/logo-css.svg">
+
+            <div class="html-css_contents">
+
+              <div class="html-css_content">
                 <p class="len"><span class="c-blue">C</span>ascade</p>
                 <p class="len"><span class="c-blue">S</span>tyle<span class="c-blue">S</span>heet</p>
               </div>
-              <div class="htmldeco">
-                <p class="explane">웹페이지 요소에 각종 속성을 부여하여</p>
-                <p class="explane">다양하게 <span>스타일링</span>할 수 있는 언어입니다.</p>
+
+              <div class="html-css_content">
+                <p class="explain">웹페이지 요소에 각종 속성을 부여하여</p>
+                <p class="explain">다양하게 <b>스타일링</b>할 수 있는 언어입니다.</p>
               </div> 
-              <div id="key">
-                  <p class="keyword">✔스타일&nbsp</p>
-                  <p class="keyword">✔웹개발&nbsp</p>
-                  <p class="keyword">✔중간&nbsp</p>
+              
+              <div class="key">
+                  <p class="keyword"><span class="check">✔</span> 스타일&nbsp</p>
+                  <p class="keyword"><span class="check">✔</span> 웹개발&nbsp</p>
+                  <p class="keyword"><span class="check">✔</span> 중간&nbsp</p>
               </div>
             </div>
           </div>

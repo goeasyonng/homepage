@@ -5,7 +5,7 @@ nav {
   background-color: var(--color-main);
 }
 
-#home {
+#nav_home {
   display: block; /* a태그는 글자성격 = inline */
   float: left;
   font-size: 30px;
@@ -27,7 +27,7 @@ nav {
     font-family: "Avenir Next", "Avenir", sans-serif;
   }
 
-  #bar {
+  #nav_bar {
     display: block;
     position: absolute;
     /* top: 50px; */
@@ -43,7 +43,7 @@ nav {
   }
 
   /* 네비게이션바 햄버거 */
-  #menuToggle {
+  #nav_menuToggle {
     display: block;
     position: absolute;
     /* top: 50px; */
@@ -58,18 +58,18 @@ nav {
     user-select: none;
   }
 
-  #menuToggle a {
+  #nav_menuToggle a {
     text-decoration: none;
     color: #454045;
 
     transition: color 0.3s ease;
   }
 
-  #menuToggle a:hover {
+  #nav_menuToggle a:hover {
     color: tomato;
   }
 
-  #menuToggle input {
+  #nav_menuToggle input {
     display: block;
     width: 40px;
     height: 32px;
@@ -85,7 +85,7 @@ nav {
     -webkit-touch-callout: none;
   }
 
-  #menuToggle span {
+  #nav_menuToggle span {
     display: block;
     width: 33px;
     height: 4px;
@@ -103,29 +103,29 @@ nav {
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
 
-  #menuToggle span:first-child {
+  #nav_menuToggle span:first-child {
     transform-origin: 0% 0%;
   }
 
-  #menuToggle span:nth-last-child(2) {
+  #nav_menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
 
-  #menuToggle input:checked ~ span {
+  #nav_menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
   }
 
-  #menuToggle input:checked ~ span:nth-last-child(3) {
+  #nav_menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
-  #menuToggle input:checked ~ span:nth-last-child(2) {
+  #nav_menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
-  #menu {
+  #nav_menu {
     position: absolute;
     width: 300px;
     margin: 0px 0 0 50px;
@@ -143,22 +143,22 @@ nav {
     transition: transform 0.7s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
-  #menu li {
+  #nav_menu li {
     padding: 10px 0;
     font-size: 22px;
   }
 
-  #menuToggle input:checked ~ ul {
+  #nav_menuToggle input:checked ~ ul {
     transform-origin: 0% 0%;
     transform: translate(-90%, 0%);
   }
 }
 
 @media (min-width: 769px) {
-  #bar {
+  #nav_bar {
     display: none;
   }
-  #home {
+  #nav_home {
     display: block; /* a태그는 글자성격 = inline */
     float: left;
     font-size: 30px;
@@ -167,7 +167,7 @@ nav {
     padding: 0 30px;
     color: white;
   }
-  #menuToggle > a {
+  #nav_menuToggle > a {
     display: block; /* a태그는 글자성격 = inline */
     float: left;
     font-size: 30px;
@@ -175,10 +175,10 @@ nav {
     line-height: 60px;
     padding: 0 30px;
   }
-  #menuToggle > ul {
+  #nav_menuToggle > ul {
     float: right;
   }
-  #menuToggle > ul li {
+  #nav_menuToggle > ul li {
     float: left;
     padding: 0 30px;
     line-height: 60px;

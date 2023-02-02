@@ -38,10 +38,10 @@
     color: var(--color-sub);
   }
 
-  .section__header {
+  .about_header {
     margin-bottom: 50px;
   }
-  .about {
+  .about_main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,7 +55,7 @@
   .about_title_3 {
     font-size: x-large;
   }
-  .section__title {
+  .about_title {
     font-size: var(--font-size-title);
     font-weight: bold;
     color: var(--color-text);
@@ -80,7 +80,7 @@
   }
 }
 @media (min-width: 769px) {
-  .about {
+  .about_main {
     padding: 50px 100px;
     margin: auto;
     display: flex;
@@ -100,17 +100,17 @@
     width: 300px;
   }
 
-  /* .about:hover {
+  /* .about_main:hover {
       filter: blur(2px);
       transition: 0.3s ease-in-out;
 
       transform: scale(0.9);
     } */
-  .about:hover .about_card:not(:hover) {
+  .about_main:hover .about_card:not(:hover) {
     transform: scale(0.9);
   }
   /* 흐림 필터링을 위한 덮개 */
-  .about:hover .about_card:not(:hover)::after {
+  .about_main:hover .about_card:not(:hover)::after {
     content: "";
     position: absolute;
     top: 0;
@@ -149,12 +149,12 @@
     text-align: center;
   }
 
-  .section__tag {
+  .about_tag {
     font-size: var(--font-size-tag);
     color: var(--color-sub);
   }
 
-  .section__title {
+  .about_title {
     font-size: var(--font-size-title);
     font-weight: bold;
     color: var(--color-text);
