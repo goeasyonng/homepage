@@ -1,4 +1,4 @@
-#html{
+#html {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,19 +6,17 @@
   width: 100%;
   margin-right: 3px;
 }
-#CSS{
+#CSS {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   width: 100%;
-
 }
-.html-css_title{
+.html-css_title {
   text-align: center;
   margin: 40px;
   margin-top: 80px;
-
 }
 #html-css_title1 {
   color: green;
@@ -26,55 +24,86 @@
 #html-css_title2 {
   color: black;
   font-size: xx-large;
-  font-weight:bold;
+  font-weight: bold;
 }
-.html-css_contents{
+.html-css_contents {
   margin: 20px;
 }
 .len {
   color: black;
-  font-size:xx-large;
+  font-size: xx-large;
 }
 
-.c-red{
+.c-red {
   color: rgb(210, 129, 144);
 }
-.c-blue{
+.c-blue {
   color: blue;
 }
 .explain {
   color: black;
 }
-.html-css_content{
+.html-css_content {
   margin-bottom: 20px;
 }
-.key{
+.key {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-weight:bold;
-
+  font-weight: bold;
 }
-.check{
+.check {
   color: green;
 }
 .keyword {
   color: rgb(210, 137, 150);
   /* text-align: left; */
-
 }
 
-.html-css_img{
+.html-css_img {
   width: 10rem;
   height: 10rem;
   margin-right: 20px;
+  animation: html-css_img-ani 1s infinite alternate;
+}
+
+.html-css_logo {
+  position: relative;
+}
+
+.html-css_logo ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 10%;
+  background-color: black;
+  border-radius: 50%;
+  animation: img-shadow 800ms ease-in-out infinite alternate;
+}
+
+@keyframes html-css_img-ani {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 40px;
+  }
+}
+
+@keyframes img-shadow {
+  from {
+    opacity: 0.08;
+  }
+  to {
+    opacity: 0.24;
+  }
 }
 
 @media (max-width: 768px) {
-  #html-css{
+  #html-css {
     background-color: rgb(247, 227, 227);
   }
-  .html-css_detail{
+  .html-css_detail {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,14 +119,13 @@
 }
 
 @media (min-width: 769px) {
-  #html-css{
+  #html-css {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(247, 227, 227);
-  
   }
-  .html-css_detail{
+  .html-css_detail {
     display: flex;
     flex-direction: row;
     margin: 40px;
